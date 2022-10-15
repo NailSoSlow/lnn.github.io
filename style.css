@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #3d3a3a;
+  min-height: 200vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 50px;
+  z-index: 10000;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header ul {
+  width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 7px;
+  text-decoration: #fff;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+}
+
+header ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header ul li:hover::after {
+  width: 100%;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.profile {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profile img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.me {
+  padding-top: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.me h1 {
+  font-size: 62px;
+}
+
+.me p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container {
+  margin-top: 5%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.textbox {
+  flex-basis: 31%;
+  background: #222121;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.ggalery {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.bggalery {
+  padding-top: 100px;
+  background: #707070;
+}
+
+.galeri h1 {
+  color: #fff;
+  font-size: 62px;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 400px;
+  height: 610px;
+  margin: auto;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.slides {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  display: flex;
+}
+
+.slides img {
+  width: 400px;
+  object-fit: contain;
+}
+
+.slides input {
+  display: none;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 400px;
+  margin-top: -580px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.manual-btn:hover {
+  background: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+  transition: 1s;
+}
+#radio2:checked ~ .first {
+  margin-left: -100%;
+  transition: 1s;
+}
+#radio3:checked ~ .first {
+  margin-left: -200%;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 400px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #fff;
+}
+
+.video-auto {
+  margin: 0;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.videos video {
+  margin: auto;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  display: block;
+}
+
+.pportfolio {
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.textbox h2 {
+  padding-bottom: 15px;
+}
+
+.textbox:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.container2 {
+  margin-top: 5%;
+  color: #fff;
+  text-align: left;
+  display: column;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.kutipan {
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  header ul {
+    width: 50%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header ul {
+    display: none;
+  }
+}
