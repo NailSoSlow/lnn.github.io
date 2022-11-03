@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;1,200;1,400&display=swap" rel="stylesheet" />
-    <!-- <script src="https://kit.fontawesome.com/4681fc972a.js" crossorigin="anonymous"></script> -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
@@ -67,16 +66,24 @@
         <div class="blank-space"></div>
         <!----- portfolio end ----->
         <div class="contact" id="contact">
-          <!-- <form class="email">
+          <form action="mail.php" method="post" class="email">
             <h3>Kirimi aku pesan!</h3>
-            <input type="text" id="name" placeholder="Masukan namamu" required />
-            <input type="email" id="email" placeholder="Masukan emailmu" required />
-            <textarea id="message" rows="5" placeholder="Masukan pesanmu"></textarea>
-            <button id="btn">Kirim</button>
-          </form> -->
-          <!-- <h3>Kontakku yang lain</h3> -->
-          <h3>Jumpai aku di..</h3>
+            <input name="name" type="text" id="name" placeholder="Masukan namamu" />
+            <input name="email" type="email" id="email" placeholder="Masukan emailmu" />
+            <textarea name="message" id="message" rows="5" placeholder="Masukan pesanmu"></textarea>
+            <input type="submit" value="Kirim" class="btn"></input>
+          </form>
           <div class="social">
+            <div class="media">
+              <a href="https://mail.google.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+              </a>
+              <p>valentjulian@gmail.com</p>
+            </div>
             <div class="media">
               <a href="https://wa.me/6281331500447/?text=Hello" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -123,7 +130,7 @@
         <div class="credit">
           <p>
             Website ini di disain dan di bangun oleh :<br />
-            Valentino Julian Wicaksono -2022
+            Valentino J.W. -2022
           </p>
         </div>
       </div>
